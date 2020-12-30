@@ -1,7 +1,7 @@
 
 buildscript {
     ext {
-        kotlinVersion = "1.4.10"
+        kotlinVersion = "1.3.72"
         detektVersion = "1.12.0-RC1"
     }
     repositories {
@@ -41,7 +41,6 @@ subprojects { project ->
     compileKotlin {
         kotlinOptions.jvmTarget = "1.6"
         kotlinOptions.allWarningsAsErrors = true
-        kotlinOptions.apiVersion = "1.3"
         kotlinOptions.freeCompilerArgs = [
             "-Xexplicit-api=strict",
             "-Xopt-in=kotlin.RequiresOptIn"
